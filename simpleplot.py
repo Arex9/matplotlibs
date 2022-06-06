@@ -1,10 +1,16 @@
 from matplotlib import pyplot as plt
-
+from numpy.random import randint
 x = [1,2,3,4,5]
-y = [1,6,22,66,111]
+data1_y = [1,6,22,66,111]
 
-plt.plot(x,y)
-plt.title("Random numbers by me!")
+data2_y = randint(1,120,5)
+
+plt.plot(x, data1_y)
+plt.plot(x, data2_y)
+
+plt.legend(["Fixed numbers", "Random numbers"])
+
+plt.title("Some data!")
 plt.xlabel("index")
-plt.ylabel("The random number")
+plt.ylabel("Data")
 plt.show()
