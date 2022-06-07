@@ -5,10 +5,10 @@ data1_y = [1,6,22,66,111]
 
 data2_y = randint(1,120,5)
 
-plt.plot(x, data1_y)
-plt.plot(x, data2_y)
+plt.plot(x, data1_y, label="Fixed numbers")
+plt.plot(x, data2_y, label="Random numbers")
 
-plt.legend(["Fixed numbers", "Random numbers"])
+plt.legend()
 
 plt.title("Some data!")
 plt.xlabel("index")
