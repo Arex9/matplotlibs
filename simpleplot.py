@@ -29,4 +29,7 @@ plt.grid(True)
 # Tight padding
 plt.tight_layout()      
 
+# Saving plot
+# plt.savefig('plot.png')
+
 plt.show()
